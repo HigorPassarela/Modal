@@ -27,7 +27,9 @@ export default class App extends Component{
           <Button title='Entrar' onPress={ this.entrar }/>
 
           <Modal transparent={true} animationType='slide' visible={this.state.modalVisible}>
+            <View style={{margin: 15, flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <Entrar fechar={ () => this.sair(false)} />
+            </View>
           </Modal>
 
       </View>
